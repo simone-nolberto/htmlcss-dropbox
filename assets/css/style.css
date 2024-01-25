@@ -47,5 +47,26 @@ nav{
 
 /* #endregion header */
 /* #region main */
-
+.jumbotron{
+    background-color: var(--drop-section-bg);
+    display: flex;
+    justify-content: center;
+    height: 500px;
+}
+.presentation{
+    position: relative;
+}
+.presentation-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.presentation-img{
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 1rem;
+}
 /* #endregion main */
