@@ -26,9 +26,9 @@
     margin: 0 5rem;
 }
 
-/* ul{
+ul{
     list-style: none;
-} */
+}
 a {
     text-decoration: none;
 }
@@ -94,9 +94,13 @@ main{
 .column{
     width: calc(100%/3);
     display: flex;
+    gap: 5rem;
 }
 .card{
     border: 1px solid;
+    margin: 0 2rem;
 }
-
+.horizontal{
+    position: relative;
+}
 /* #endregion main */
