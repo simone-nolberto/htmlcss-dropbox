@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
 :root {
     --drop-primary: rgba(0, 97, 255, 1);
     --drop-section-bg: rgba(180, 208, 231, 1);
@@ -97,7 +99,7 @@ main{
     gap: 5rem;
 }
 .card{
-    border: 1px solid;
+    border: 1px solid lightgray;
     margin: 0 2rem;
 }
 .horizontal{
@@ -116,5 +118,19 @@ main{
 }
 .partner-text{
     width: 40%;
+}
+
+.row{
+    display: flex;
+    max-width: 100%;
+}
+.function-box{
+    width: calc((100%/12)*4);
+}
+.function-img{
+    width: 250px;
+}
+.window{
+    max-width: 100%;
 }
 /* #endregion main */
