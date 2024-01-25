@@ -179,3 +179,17 @@ section{
     max-width: 50%;
 }
 /* #endregion main */
+
+/* #region footer */
+footer{
+    background-color: var(--drop-footer);
+    color: white;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+/* #endregion footer */
