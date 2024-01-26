@@ -97,21 +97,25 @@ main {
     bottom: 0;
     right: 1rem;
 }
-
-.column {
-    width: calc(100%/3);
+.plans{
+    margin-top: 4rem;
+}
+.col-4{
+    width: calc((100%/12)*4);
     display: flex;
-    gap: 5rem;
+    flex-grow: 1;
+}
+.card{
+    width: 100%;
+    min-height: 300px;
+    border: 1px solid;
 }
 
-.card {
-    border: 1px solid lightgray;
-    margin: 0 2rem;
-}
 
-.horizontal {
-    position: relative;
-}
+
+
+
+
 
 .find-a-partner {
     margin: 5rem 0;
@@ -139,6 +143,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
+    
 }
 
 .function-box {
@@ -152,6 +157,7 @@ main {
 .window {
     max-width: 100%;
 }
+
 .corporate-logo{
     width: 100%;
 }
