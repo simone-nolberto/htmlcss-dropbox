@@ -152,33 +152,30 @@ main {
 .window {
     max-width: 100%;
 }
-
-.corporate-logo {
+.corporate-logo{
+    width: 100%;
+}
+.col-3 {
     margin-top: 5rem;
     display: flex;
+    border-style: dashed;
+    
+}
+.left-block,.central-block,.right-block{
+    width: 450px;
+    aspect-ratio: 1;
+    flex-grow: 1;
+    border: 1px solid;
 }
 
-.left-block {
+.left-block,.right-block{
     display: flex;
     flex-wrap: wrap;
 }
 
-.right-block {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.central-block {
-    background-color: grey;
-    width: 500px;
-    height: 500px;
-
-}
-
-.square {
+.square{
     width: 250px;
-    height: 250px;
-    background-color: lightseagreen;
+    flex-grow: 1;
     border: 1px solid;
 }
 
@@ -202,20 +199,24 @@ section {
     max-width: 50%;
 }
 
-.faq{
+.faq {
     margin-bottom: 5rem;
 }
-.question-box{
+
+.question-box {
     margin-top: 2rem;
 }
-.question{
+
+.question {
     border-top: 1px solid;
     border-bottom: 1px solid;
     padding: 2rem 0;
 }
-.fa-chevron-down{
+
+.fa-chevron-down {
     padding: 0 3rem;
 }
+
 /* #endregion main */
 
 /* #region footer */
@@ -231,4 +232,5 @@ footer {
     gap: 2rem;
     padding: 5rem;
 }
+
 /* #endregion footer */
