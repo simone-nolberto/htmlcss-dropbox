@@ -30,6 +30,7 @@ button {
 
 .container-medium {
     width: 70%;
+    margin: auto;
 }
 
 .container-small {
@@ -61,12 +62,15 @@ nav {
     display: flex;
     align-items: center;
     gap: 2rem;
+    flex-grow: 1;
 }
 
 .right {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 2rem;
+    flex-grow: 1;
 }
 
 
@@ -101,6 +105,8 @@ nav {
     width: 60%;
     border: 1px solid;
 }
+/* end jumbotron */
+
 
 .plans {
     margin-top: 4rem;
@@ -140,7 +146,7 @@ nav {
     border: 1px solid lightgrey;
     position: relative;
 }
-
+/* end plans */
 
 
 .find-a-partner {
@@ -159,7 +165,10 @@ nav {
 
 .partner-text {
     width: 40%;
+    padding: 2rem;
 }
+/* end find a partner */
+
 
 .functions {
     margin-bottom: 5rem;
@@ -192,6 +201,8 @@ nav {
     margin-top: 5rem;
     display: flex;
 }
+/* end functions */
+
 
 .left-block,
 .central-block,
@@ -221,6 +232,8 @@ nav {
 .logo{
     filter:invert(100%);
 }
+/* end corporate logo */
+
 
 section {
     background-color: var(--drop-section-bg);
@@ -241,6 +254,8 @@ section {
     color: var(--drop-font);
     max-width: 50%;
 }
+/* end call to action */
+
 
 .faq {
     margin-bottom: 5rem;
@@ -259,6 +274,8 @@ section {
 .fa-chevron-down {
     padding: 0 3rem;
 }
+/* end faq */
+
 
 /* #endregion main */
 
@@ -266,14 +283,17 @@ section {
 footer {
     background-color: var(--drop-footer);
     color: white;
+    padding: 3rem;
 }
 
 .top {
-    width: calc(100%5);
+    min-height: 400px;
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 5rem;
 }
-
+.footer-card{
+    width: calc(100%/5);
+    min-height: 300px;
+    border: 1px solid white;
+    
+}
 /* #endregion footer */
