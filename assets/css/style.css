@@ -16,6 +16,14 @@ body {
     --drop-footer: rgba(0, 0, 0, 1);
 }
 
+button{
+    background-color: var(--drop-primary);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+}
+
 .container-big {
     width: 100%;
 }
@@ -65,41 +73,40 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-main {
-    display: flex;
     flex-direction: column;
 }
-
-.jumbotron {
+.jumbotron{
+    width: 100%;
+    min-height: 600px;
     background-color: var(--drop-section-bg);
+}
+.jumbotron-title{
+    min-height: 200px;
+    border: 1px dashed;
+    margin: auto;
+    margin-top: 5rem;
+    font-size: xx-large;
+    
+}
+
+.jumbotron-body{
+    min-height: 400px;
+    border: 1px dashed;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    height: 500px;
 }
-
-.presentation {
-    position: relative;
-}
-
-.presentation-text {
+.jumbotron-text {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.presentation-img {
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 1rem;
+    height: 400px;
+    border: 1px solid;
 }
 
 .plans {
     margin-top: 4rem;
+}
+
+.plans-title{
+    margin-bottom: 4rem;
 }
 
 .col-4 {
@@ -127,7 +134,7 @@ main {
 
 .horizontal-card{
     margin-top: 2rem;
-    min-height: 250px;
+    min-height: 200px;
     width: 100%;
     border: 1px solid lightgrey;
     position: relative;
