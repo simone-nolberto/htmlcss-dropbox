@@ -16,7 +16,7 @@ body {
     --drop-footer: rgba(0, 0, 0, 1);
 }
 
-button{
+button {
     background-color: var(--drop-primary);
     color: white;
     font-size: 15px;
@@ -79,21 +79,24 @@ nav {
     align-items: center;
     flex-direction: column;
 }
-.jumbotron{
+
+.jumbotron {
     width: 100%;
     background-color: var(--drop-section-bg);
 }
-.jumbotron-title{
+
+.jumbotron-title {
     margin: auto;
     margin-top: 10rem;
     font-size: xx-large;
 }
 
-.jumbotron-body{
+.jumbotron-body {
     margin: auto;
     display: flex;
     padding: 3rem;
 }
+
 .jumbotron-text {
     width: 60%;
     border: 1px solid;
@@ -103,7 +106,7 @@ nav {
     margin-top: 4rem;
 }
 
-.plans-title{
+.plans-title {
     margin-bottom: 4rem;
 }
 
@@ -130,7 +133,7 @@ nav {
     padding: 1rem;
 }
 
-.horizontal-card{
+.horizontal-card {
     margin-top: 2rem;
     min-height: 200px;
     width: 100%;
@@ -188,8 +191,6 @@ nav {
 .col-3 {
     margin-top: 5rem;
     display: flex;
-    border-style: dashed;
-
 }
 
 .left-block,
@@ -198,9 +199,9 @@ nav {
     width: 450px;
     aspect-ratio: 1;
     flex-grow: 1;
-    border: 1px solid;
 }
-.central-block{
+
+.central-block {
     background-color: var(--drop-box-bg);
 }
 
@@ -213,9 +214,12 @@ nav {
 .square {
     width: 250px;
     flex-grow: 1;
-    border: 1px solid;
     display: flex;
     justify-content: center;
+}
+
+.logo{
+    filter:invert(100%);
 }
 
 section {
