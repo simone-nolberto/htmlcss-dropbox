@@ -53,7 +53,7 @@ input {
     font-weight: 600;
 }
 
-button:hover{
+button:hover {
     opacity: 70%;
 }
 
@@ -122,7 +122,7 @@ nav {
 .jumbotron-text {
     width: 60%;
     padding: 2rem;
-    
+
 
 }
 
@@ -140,7 +140,7 @@ nav {
 
 .plans-title {
     margin: 4rem 0;
-    
+
 }
 
 .col-4 {
@@ -262,6 +262,7 @@ nav {
 
 .central-block {
     background-color: var(--drop-box-bg);
+    position: relative;
 }
 
 .left-block,
@@ -281,13 +282,56 @@ nav {
     filter: invert(100%);
 }
 
+.try-me{
+    font-size: large;
+    font-weight: 700;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body:has(.square:hover) .try-me{
+    display: none;
+}
+
 .text-showoff {
     padding: 2rem;
     font-size: small;
     display: none;
 }
 
-#designit:hover .text-showoff {
+body:has(#designit:hover) .text-showoff.designit {
+    display: block;
+}
+
+body:has(#asu:hover) .text-showoff.asu {
+    display: block;
+}
+
+body:has(#uf:hover) .text-showoff.uf {
+    display: block;
+}
+
+body:has(#topps:hover) .text-showoff.topps {
+    display: block;
+}
+
+body:has(#wbr:hover) .text-showoff.wbr {
+    display: block;
+}
+
+body:has(#hearts:hover) .text-showoff.hearts {
+    display: block;
+}
+
+body:has(#lp:hover) .text-showoff.lp {
+    display: block;
+}
+
+body:has(#outdoor:hover) .text-showoff.outdoor {
     display: block;
 }
 
@@ -380,9 +424,8 @@ footer {
 .footer-card {
     width: calc(100%/5);
     min-height: 300px;
-    border: 1px solid white;
     line-height: 50px;
-
 }
+
 
 /* #endregion footer */
