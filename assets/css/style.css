@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "open sans";
 }
 
 :root {
@@ -20,7 +20,7 @@ button {
     background-color: var(--drop-primary);
     color: white;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 0.5rem 1rem;
 }
 
@@ -44,6 +44,13 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+input {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    background-color: white;
+    font-weight: 600;
 }
 
 /* #region header */
@@ -98,13 +105,19 @@ nav {
 .jumbotron-body {
     margin: auto;
     display: flex;
-    padding: 3rem;
+    padding: 3em 3rem 0;
 }
 
 .jumbotron-text {
     width: 60%;
-    border: 1px solid;
+    padding: 2rem;
+
 }
+
+.jumbotron-img {
+    margin-bottom: -5rem;
+}
+
 
 /* end jumbotron */
 
@@ -114,7 +127,7 @@ nav {
 }
 
 .plans-title {
-    margin-bottom: 4rem;
+    margin: 4rem 0;
 }
 
 .col-4 {
@@ -138,6 +151,10 @@ nav {
 
 .card-body {
     padding: 1rem;
+}
+
+.fa-check {
+    color: blue;
 }
 
 .horizontal-card {
@@ -191,16 +208,25 @@ nav {
 }
 
 .function-box {
-    width: calc((100%/12)*4);
-}
-
-.function-img {
-    width: 250px;
+    width: calc(100%/3);
+    font-size: small;
 }
 
 .window {
     max-width: 100%;
+    filter: blur(10px);
 }
+
+.function-img {
+    width: 250px;
+
+}
+
+.function-box:hover .window {
+    filter: blur(0);
+}
+
+/* end functions */
 
 .corporate-logo {
     width: 100%;
@@ -210,9 +236,6 @@ nav {
     margin-top: 5rem;
     display: flex;
 }
-
-/* end functions */
-
 
 .left-block,
 .central-block,
@@ -237,20 +260,18 @@ nav {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    z-index: 1;
 }
 
 .logo {
     filter: invert(100%);
 }
 
-.designit:hover .text-showoff {
-    display: block;
-}
-
 .text-showoff {
     padding: 2rem;
     font-size: small;
+}
+
+.designit:hover .text-showoff {
     display: none;
 }
 
@@ -300,6 +321,10 @@ section {
 
 .fa-chevron-down {
     padding: 0 3rem;
+}
+
+.fa-chevron-up{
+    display: none;
 }
 
 .answer {
