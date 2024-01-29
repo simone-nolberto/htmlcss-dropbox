@@ -105,6 +105,7 @@ nav {
     width: 60%;
     border: 1px solid;
 }
+
 /* end jumbotron */
 
 
@@ -146,6 +147,13 @@ nav {
     border: 1px solid lightgrey;
     position: relative;
 }
+
+.horizontal-card button {
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+}
+
 /* end plans */
 
 
@@ -167,6 +175,7 @@ nav {
     width: 40%;
     padding: 2rem;
 }
+
 /* end find a partner */
 
 
@@ -201,6 +210,7 @@ nav {
     margin-top: 5rem;
     display: flex;
 }
+
 /* end functions */
 
 
@@ -227,11 +237,23 @@ nav {
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
-.logo{
-    filter:invert(100%);
+.logo {
+    filter: invert(100%);
 }
+
+.designit:hover .text-showoff {
+    display: block;
+}
+
+.text-showoff {
+    padding: 2rem;
+    font-size: small;
+    display: none;
+}
+
 /* end corporate logo */
 
 
@@ -254,6 +276,7 @@ section {
     color: var(--drop-font);
     max-width: 50%;
 }
+
 /* end call to action */
 
 
@@ -271,9 +294,22 @@ section {
     padding: 2rem 0;
 }
 
+.question:hover .answer {
+    display: block;
+}
+
 .fa-chevron-down {
     padding: 0 3rem;
 }
+
+.answer {
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    display: none;
+}
+
+
 /* end faq */
 
 
@@ -290,10 +326,12 @@ footer {
     min-height: 400px;
     display: flex;
 }
-.footer-card{
+
+.footer-card {
     width: calc(100%/5);
     min-height: 300px;
     border: 1px solid white;
-    
+
 }
+
 /* #endregion footer */
