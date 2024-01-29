@@ -319,12 +319,21 @@ section {
     display: block;
 }
 
+.question:hover i.fa-chevron-up {
+    display: inline-block;
+}
+
+.question:hover i.fa-chevron-down {
+    display: none;
+}
+
 .fa-chevron-down {
     padding: 0 3rem;
 }
 
-.fa-chevron-up{
+i.fa-chevron-up{
     display: none;
+    padding: 0 3rem;
 }
 
 .answer {
