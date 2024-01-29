@@ -53,6 +53,10 @@ input {
     font-weight: 600;
 }
 
+button:hover{
+    opacity: 70%;
+}
+
 /* #region header */
 
 nav {
@@ -80,6 +84,13 @@ nav {
     flex-grow: 1;
 }
 
+.left>a:hover {
+    border-bottom: 3px solid blue;
+}
+
+.right>a:hover {
+    border-bottom: 3px solid blue;
+}
 
 /* #endregion header */
 
@@ -269,10 +280,11 @@ nav {
 .text-showoff {
     padding: 2rem;
     font-size: small;
+    display: none;
 }
 
-.designit:hover .text-showoff {
-    display: none;
+#designit:hover .text-showoff {
+    display: block;
 }
 
 /* end corporate logo */
@@ -331,7 +343,7 @@ section {
     padding: 0 3rem;
 }
 
-i.fa-chevron-up{
+i.fa-chevron-up {
     display: none;
     padding: 0 3rem;
 }
