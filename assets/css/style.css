@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "open sans";
 }
@@ -141,6 +145,10 @@ nav {
     margin-bottom: -5rem;
 }
 
+.scroll-button{
+    color: black;
+    font-size: xxx-large;
+}
 
 /* end jumbotron */
 
